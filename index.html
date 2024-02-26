@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Starbucks</title>
+</head>
+
+<body>
+
+    <div class="circulo"></div>
+
+    <header>
+        <img src="./img/logo.png" alt="logo starbucks" class="logo">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+    </header>
+    
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h1> Não é apenas Café, é um <span>Starbucks</span></h1>
+            <p>Um delicioso café para começar bem o seu dia, nada como um Starbucks!</p>
+            <button>Venha Saborear</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/img1.png" alt="Copo Starbucks" class="Starbucks">
+        </div>
+    </div>
+
+    <div class="video-fundo">
+        <video src="./production_id_4333471 (2160p).mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="mascara"></div>
+
+    <div class="menu">
+        <img src="./img/img-pequena1.png" alt="Copo verde pequeno" class="copo verde">
+        <img src="./img/img-pequena2.png" alt="Copo roza pequeno" class="copo roza">
+        <img src="./img/img-pequena3.png" alt="Copo roxo pequeno" class="copo roxo">
+    </div>
+  
+
+</body>
+<script>
+
+    let circulo = document.querySelector(".circulo")
+    let copao = document.querySelector(".Starbucks")
+    let verde = document.querySelector(".verde")
+    let roza = document.querySelector(".roza")
+    let roxo = document.querySelector(".roxo")
+
+    roza.addEventListener("click", () => {
+        copao.src = "./img/img2.png"
+        circulo.style.background = "#eb7495"
+    })
+    verde.addEventListener("click", () => {
+        copao.src = "./img/img1.png"
+        circulo.style.background = "#017143"
+    })
+    roxo.addEventListener("click", () => {
+        copao.src = "./img/img3.png"
+        circulo.style.background = "#d752b1"
+    })
+
+
+
+</script>
+
+</html>
